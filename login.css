@@ -1,0 +1,172 @@
+@charset "utf-8";
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  width:300;
+}
+
+/*li {
+  float: left;
+}
+
+li a {
+  display: block;
+  
+  text-align: center;
+  color:#FF0206;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+  color: white;
+}
+
+.active {
+  background-color: #4CAF50;
+}*/
+
+
+
+input[type=text], input[type=password] ,input[type=file]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #FF0004;
+}
+.text
+{
+	  width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box
+}
+
+button {
+    background-color:rgba(0,0,0,0.46);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    width: 100%;
+	border-radius: 12px;
+}
+
+button:hover {
+    opacity: 0.8;
+	 background-color:#FF0004;
+  
+}
+.side
+{
+	position: fixed;
+	left: -100%;
+	max-width: 350px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.46);
+	height: 100vh;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	transition: all 0.3s ease-in;
+}
+
+side.header
+{
+	text-align: center;
+	height: 70px;
+	widows: 100%;
+	line-height: 70px;
+	padding: 30px 0;
+	
+	
+}
+
+
+.side.nav-links
+{
+	width: 100%;
+	overflow-y: auto;
+}
+.nav-links li a
+{
+	display: block;
+	color: #FA3A3D;
+	line-height: 65px;
+	padding-left: 20px;
+	transition: all 0.3s ease-in;
+}
+.nav-links li a i
+{
+ margin-right: 10px;
+}
+.nav-links li a:hover
+{
+	background-color:rgba(0,0,0,0.41);
+}
+
+
+
+.mbtns label
+{
+	position: absolute;
+	right: 30px;
+	top: 20px;
+	cursor: pointer;
+	z-index: 5;
+	display:none;
+}
+
+.mbtns label i
+{
+	color: #6D6D6D;
+	font-size: 1.6rem;
+	
+}
+
+.mbtns > .showbtn
+{
+	display: block;
+}
+
+#s-menue:checked ~ .side
+{
+	left: 0;
+	
+}
+
+#s-menue:checked ~ .mbtns .showbtn
+{
+	display: none;
+	
+}
+#s-menue:checked ~ .mbtns .hidebtn
+{
+	display:block;
+	
+}
+input
+{
+	display: none;
+}
+
+button.button
+{
+   right: 75%;
+	width: 250px;
+	margin: 2px 2px;
+	padding: 16px;
+	border-radius: 12px;
+}
+
